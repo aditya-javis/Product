@@ -32,7 +32,7 @@ public class ProductService {
 
     public List<Product> updateProductState(List<Product> productList) {
         List<Product> newProductList =  productRepository.saveAll(productList);
-        newProductList.forEach(item -> item.setState(2));
+        newProductList.forEach(item -> item.setState(3));
         return newProductList;
     }
 }
