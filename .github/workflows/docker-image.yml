@@ -19,6 +19,7 @@ jobs:
         uses: actions/setup-java@v2
         with:
           java-version: '17'
+          distribution: 'temurin'  # Add the distribution input
 
       # Build the project (Maven example)
       - name: Build with Maven
